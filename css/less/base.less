@@ -1,0 +1,28 @@
+// Mixins
+.flexrow() {display: flex;
+    flex-direction: row;}
+.flexcolumn() {display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;}
+.text(@align, @font) {text-align: @align;
+    font-size: @font;}
+
+// Variables
+@1175: ~"only screen and (max-width: 1175px)";
+@930: ~"only screen and (max-width: 930px)";
+@730: ~"only screen and (max-width: 730px)";
+@575: ~"only screen and (max-width: 575px)";
+@400: ~"only screen and (max-width: 400px)";
+@mainbg: #f7edf7;
+@mainfont: #341835;
+@navbg: #A349A4;
+@navfont: #462046;
+@footerbg: #dfb9df;
+@color: #692f6a;
+@altcolor: #8b3f8d;
+@border: 3px double @color;
+
+// Basics
+.center {margin: auto;}
+body {background-color: @mainbg;}
